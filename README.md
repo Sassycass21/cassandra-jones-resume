@@ -5,5 +5,3 @@
 **Live Site:**  https://sassycass21.github.io/
 
 ![Screenshot of the site] (site1.png)
-![Screenshot of the site] (site2.png)
-![Screenshot of the site] (site3.png)
