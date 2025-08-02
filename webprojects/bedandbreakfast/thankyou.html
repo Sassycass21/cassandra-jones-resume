@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Cassandra Jones_07.06.25_CIS130 Bed and Breakfast-->
+  <!--Confirmation Page-->
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/775a64819c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>We Look Forward To Hearing From You</title>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><i class="fa-solid fa-house"></i><a href="index.html">Home | </a></li> 
+        <li><i class="fa-solid fa-bed"></i><a href="rooms.html">Rooms & Amenities | </a></li>
+        <li><i class="fa-regular fa-circle-question"></i><a href="request.html">Request Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="thankyoupage">
+    <h1>Thank you for requesting your personalized stay planner!</h1>
+    <p>CHECK YOUR INBOX FOR DETAILS</p>
+
+    <div class="submission-data">
+      <script>
+        function printQuery() {
+          var query = window.location.search.substring(1);
+          var vars = query.split("&");
+          for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            document.write(decodeURIComponent(pair[0]) + ": " + decodeURIComponent(pair[1]) + "<br />");
+          }
+        }
+        printQuery();
+      </script>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="images/FlyVaultLogo.jpg" alt="Fly Vault">
+    &copy; CJ Admin Solutions, LLC 2025
+  </footer>
+
+</body>
+
+</html>

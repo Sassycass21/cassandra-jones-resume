@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Cassandra Jones_07.06.25_CIS130 Bed and Breakfast-->
+    <!--Request Information Form Page-->
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/775a64819c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fly Vault Lodge Stay Planner</title>
+</head>
+
+<header class="navbar">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="index.html">Home | </a></li>
+            <li><i class="fa-solid fa-bed"></i><a href="rooms.html">Rooms & Amenities | </a></li>
+            <li><i class="fa-regular fa-circle-question"></i><a href="request.html">Request Info</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="banner">
+    <img src="images/cabinbanner.jpg" alt="FlyVault Lodge">
+    <div class="banner-text">
+        <h1>Welcome to FlyVault Lodge</h1>
+        <p>#welakeithere</p>
+    </div>
+</section>
+
+<h2>Interested in Staying With Us?</h2>
+<div class="stayplanner">
+    <form method="get" action="thankyou.html" class="info-form">
+        <fieldset>
+            <legend>
+                <h2>Request a Personalized Stay Planner!</h2>
+            </legend>
+            <label for="fname">First Name*</label>
+            <input autofocus type="text" name="fname" id="fname" required placeholder="(required)">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname">
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required placeholder="(required)">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="contact">Preferred Contact Method?</label>
+            <select id="contact" name="contact">
+                <option value="phone">Call</option>
+                <option value="email">Email</option>
+            </select>
+            <fieldset>
+                <legend>Interested In:</legend>
+                <label><input type="checkbox" name="amenities" value="fly-fishing"> Fly Fishing</label>
+                <label><input type="checkbox" name="amenities" value="fly-tying"> Fly Tying</label>
+                <label><input type="checkbox" name="amenities" value="kayaking"> Kayaking</label>
+                <label><input type="checkbox" name="amenities" value="trails"> Trails</label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferred Stay:</legend>
+                <label><input type="radio" name="stay" value="weekend"> Weekend</label>
+                <label><input type="radio" name="stay" value="weekday"> Weekday</label>
+                <label><input type="radio" name="stay" value="flexible"> Flexible</label>
+            </fieldset>
+            <label for="referral">How Did You Hear About Us?</label>
+            <textarea name="referral" rows="3" cols="50" id="referral"></textarea>
+        </fieldset>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <img src="images/FlyVaultLogo.jpg" alt="Fly Vault">
+    &copy; CJ Admin Solutions, LLC 2025
+</footer>
+
+</html>
